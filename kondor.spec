@@ -1,5 +1,5 @@
 Name:           kondor
-Version:        0.1.0
+Version:        0.2.0
 Release:        1%{?dist}
 Summary:        Cleans build artifacts from software projects
 
@@ -45,5 +45,8 @@ Cleans build artifacts from software projects, including nested projects.
 %{_bindir}/kondor
 
 %changelog
+* Wed Nov 11 2026 Grzegorz Blach <grzegorz@blach.dev> - 0.2.0-1
+- Update to 0.2.0
+
 * Sat Nov 07 2026 Grzegorz Blach <grzegorz@blach.dev> - 0.1.0-1
 - Initial package
