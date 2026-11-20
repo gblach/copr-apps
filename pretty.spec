@@ -1,11 +1,11 @@
-%global gpui_component_version 0.9.0
-%global gpui_pre_wgpu_version 0.3.11
+%global gpui_component_version 0.10.0
+%global gpui_pre_wgpu_version 0.3.12
 %global crates_url https://static.crates.io/crates
 # Full debug info makes the final LTO link of ~800 crates run out of memory.
 %global rustflags_debuginfo 1
 
 Name:           pretty
-Version:        0.1.0
+Version:        0.1.1
 Release:        1%{?dist}
 Summary:        Pretty terminal emulator
 
@@ -98,5 +98,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/pretty.desktop
 %{_datadir}/icons/hicolor/scalable/apps/pretty.svg
 
 %changelog
+* Fri Nov 20 2026 Grzegorz Blach <grzegorz@blach.dev> - 0.1.1-1
+- Update to 0.1.1
+
 * Sat Nov 07 2026 Grzegorz Blach <grzegorz@blach.dev> - 0.1.0-1
 - Initial package
